@@ -61,6 +61,11 @@
                 container.appendChild(div);
 		};
 
+        document.getElementById('reset').onclick = function() {
+            container.innerHTML = '';
+        };
+        
+
         
         function base64ArrayBuffer(arrayBuffer) {
             var base64    = '';

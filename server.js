@@ -1,11 +1,11 @@
 const app = require('express')(), 
 		server = require('http').Server(app), 
 		io = require('socket.io')(server), 
-		rtsp = require('../lib/rtsp-ffmpeg');
+		rtsp = require('./lib/rtsp-ffmpeg');
 		
 // use rtsp = require('rtsp-ffmpeg') instead if you have install the package
-server.listen(5000, function(){
-	console.log('Listening on localhost:8000');
+server.listen(3000, function(){
+	console.log('Listening on localhost:3000');
 });
 
 const fps = 60;
